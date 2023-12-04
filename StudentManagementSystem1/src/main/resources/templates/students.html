@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student Management System</title>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <style>
+        .nav-item {
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid #ddd; /* Add a border */
+            border-radius: 5px; /* Optional: rounded corners */
+        }
+
+        .nav-link {
+            color: white; /* Set link color to white */
+        }
+        .h3 {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+   
+    <a class="navbar-brand" href="#"><h3>Student Management System</h3></a>
+
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/studentsinfo}">Studentsinfo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/courses}">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/departments}">Department</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/instructors}">Instructor</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{/registration}">Registration</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<img src="https://img.freepik.com/free-photo/entrepreneurs-meeting-office_23-2148898688.jpg?w=740&t=st=1701320958~exp=1701321558~hmac=4b6eb25f16756c682a8d20a417f81998a6b756648c7d10256b05a37cfccdb93d" alt="StudentManagementSystem" height="523" width="1366">
+</body>
+</html>
